@@ -2,17 +2,25 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const ProductList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-gap: 20px; */
+
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 20px;
   list-style: none;
 
   li {
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
     background: #fff;
     border-radius: 4px;
     padding: 20px;
+    flex: 1 1 300px;
 
     img {
       align-self: center;
